@@ -5,8 +5,8 @@
 /**
  * Randomize array element order in-place.
  * Using Durstenfeld shuffle algorithm.
- * @param {T} target
- * @returns {T}
+ * @param target The target array to shuffle.
+ * @returns The shuffled target array.
  */
 export default function shuffle(target) {
     let i = target.length;

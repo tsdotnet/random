@@ -9,8 +9,8 @@ interface ArrayLikeWritable<T> {
 /**
  * Randomize array element order in-place.
  * Using Durstenfeld shuffle algorithm.
- * @param {T} target
- * @returns {T}
+ * @param target The target array to shuffle.
+ * @returns The shuffled target array.
  */
 export default function shuffle<T extends ArrayLikeWritable<any>>(target: T): T;
 export {};
