@@ -167,4 +167,4 @@ function nr(boundary, inclusive) {
         boundary += boundary / a;
     return r(boundary);
 }
-//# sourceMappingURL=Xrandom.js.map
+//# sourceMappingURL=random.js.map
