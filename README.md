@@ -7,4 +7,5 @@
 A utility for simplifying generating random numbers and shuffling arrays.
 
 ## Docs
+
 [tsdotnet.github.io/random](https://tsdotnet.github.io/random/)
