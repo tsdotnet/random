@@ -58,8 +58,8 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
-    "@tsdotnet/array-copy": "^1.0.6",
-    "@tsdotnet/array-init": "^1.0.6",
-    "@tsdotnet/integer": "^1.0.5"
+    "@tsdotnet/array-copy": "^1.0.7",
+    "@tsdotnet/array-init": "^1.0.7",
+    "@tsdotnet/integer": "^1.0.6"
   }
 }
