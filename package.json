@@ -58,9 +58,9 @@
     "typescript": "^3.9.2"
   },
   "dependencies": {
-    "@tsdotnet/array-copy": "^1.0.10",
+    "@tsdotnet/array-copy": "^1.0.12",
     "@tsdotnet/array-init": "^1.0.8",
-    "@tsdotnet/integer": "^1.0.8",
+    "@tsdotnet/integer": "^1.0.10",
     "tslib": "^2.0.0"
   }
 }
