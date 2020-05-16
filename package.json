@@ -60,6 +60,7 @@
   "dependencies": {
     "@tsdotnet/array-copy": "^1.0.10",
     "@tsdotnet/array-init": "^1.0.8",
-    "@tsdotnet/integer": "^1.0.8"
+    "@tsdotnet/integer": "^1.0.8",
+    "tslib": "^2.0.0"
   }
 }
