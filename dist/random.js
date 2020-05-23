@@ -5,9 +5,9 @@
  */
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
-const integer_1 = tslib_1.__importDefault(require("@tsdotnet/integer"));
-const array_init_1 = tslib_1.__importDefault(require("@tsdotnet/array-init"));
 const array_copy_1 = tslib_1.__importDefault(require("@tsdotnet/array-copy"));
+const array_init_1 = tslib_1.__importDefault(require("@tsdotnet/array-init"));
+const integer_1 = tslib_1.__importDefault(require("@tsdotnet/integer"));
 const shuffle_1 = tslib_1.__importDefault(require("./shuffle"));
 const shuffleCopy_1 = tslib_1.__importDefault(require("./shuffleCopy"));
 function random() {

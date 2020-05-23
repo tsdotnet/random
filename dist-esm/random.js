@@ -2,9 +2,9 @@
  * @author electricessence / https://github.com/electricessence/
  * Licensing: MIT
  */
-import int from '@tsdotnet/integer';
-import arrayInit from '@tsdotnet/array-init';
 import arrayCopy from '@tsdotnet/array-copy';
+import arrayInit from '@tsdotnet/array-init';
+import int from '@tsdotnet/integer';
 import arrayShuffle from './shuffle';
 import arrayShuffleCopy from './shuffleCopy';
 function random() {
