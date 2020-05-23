@@ -37,7 +37,6 @@ function random() {
      * @returns {()=>number}
      */
     function generate(maxExclusive = 1) {
-        // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
         return () => r(maxExclusive);
     }
     random.generate = generate;
@@ -50,7 +49,6 @@ function random() {
          * @returns {()=>number}
          */
         function integers(boundary, inclusive) {
-            // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
             return () => nr(boundary, inclusive);
         }
         generate.integers = integers;

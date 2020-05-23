@@ -3,11 +3,13 @@
  * Licensing: MIT
  */
 
-import int from '@tsdotnet/integer';
-import arrayInit from '@tsdotnet/array-init';
 import arrayCopy from '@tsdotnet/array-copy';
+import arrayInit from '@tsdotnet/array-init';
+import int from '@tsdotnet/integer';
 import arrayShuffle from './shuffle';
 import arrayShuffleCopy from './shuffleCopy';
+
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 
 interface ArrayLikeWritable<T>
 {
@@ -48,7 +50,6 @@ namespace random
 	 */
 	export function generate (maxExclusive: number = 1): () => number
 	{
-		// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 		return () => r(maxExclusive);
 	}
 
@@ -63,7 +64,6 @@ namespace random
 		 */
 		export function integers (boundary: number, inclusive?: boolean): () => number
 		{
-			// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 			return () => nr(boundary, inclusive);
 		}
 	}
