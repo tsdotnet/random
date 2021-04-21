@@ -19,7 +19,7 @@
     "random select"
   ],
   "scripts": {
-    "build:dist": "rimraf dist/* && copyfiles -u 1 src/**/*.d.ts dist && tsc",
+    "build:dist": "rimraf dist/* && tsc && copyfiles -u 1 src/**/*.d.ts dist",
     "build:dist-esm": "rimraf dist-esm/* && tsc -p tsconfig.esm.json",
     "build": "pnpm i && run-p build:*",
     "bump": "npm run precommit && npm version patch",
@@ -58,14 +58,13 @@
     "rimraf": "^3.0.2",
     "ts-node": "^9.1.1",
     "typedoc": "^0.20.35",
-    "typedoc-plugin-external-module-name": "3.1.0",
     "typedoc-plugin-nojekyll": "^1.0.1",
     "typescript": "^4.2.4"
   },
   "dependencies": {
-    "@tsdotnet/array-copy": "^1.0.14",
+    "@tsdotnet/array-copy": "^1.0.15",
     "@tsdotnet/array-init": "^1.0.11",
-    "@tsdotnet/integer": "^1.0.11",
-    "tslib": "^2.0.0"
+    "@tsdotnet/integer": "^1.0.12",
+    "tslib": "^2.2.0"
   }
 }
