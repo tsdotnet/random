@@ -5,11 +5,11 @@
  */
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
-const array_copy_1 = tslib_1.__importDefault(require("@tsdotnet/array-copy"));
-const array_init_1 = tslib_1.__importDefault(require("@tsdotnet/array-init"));
-const integer_1 = tslib_1.__importDefault(require("@tsdotnet/integer"));
-const shuffle_1 = tslib_1.__importDefault(require("./shuffle"));
-const shuffleCopy_1 = tslib_1.__importDefault(require("./shuffleCopy"));
+const array_copy_1 = (0, tslib_1.__importDefault)(require("@tsdotnet/array-copy"));
+const array_init_1 = (0, tslib_1.__importDefault)(require("@tsdotnet/array-init"));
+const integer_1 = (0, tslib_1.__importDefault)(require("@tsdotnet/integer"));
+const shuffle_1 = (0, tslib_1.__importDefault)(require("./shuffle"));
+const shuffleCopy_1 = (0, tslib_1.__importDefault)(require("./shuffleCopy"));
 function random() {
     return Math.random();
 }
@@ -100,7 +100,7 @@ function random() {
      */
     function integers(count, boundary, inclusive) {
         integer_1.default.assert(count);
-        const s = array_init_1.default(count);
+        const s = (0, array_init_1.default)(count);
         for (let i = 0; i < count; i++) {
             s[i] = nr(boundary, inclusive);
         }
@@ -122,7 +122,7 @@ function random() {
             case 1:
                 return [select.one(source, true)];
         }
-        const result = shuffle_1.default(array_copy_1.default(source));
+        const result = (0, shuffle_1.default)((0, array_copy_1.default)(source));
         if (maxCount < result.length)
             result.length = maxCount;
         return result;
@@ -143,7 +143,7 @@ function random() {
      * @returns {T}
      */
     function shuffle(target) {
-        return shuffle_1.default(target);
+        return (0, shuffle_1.default)(target);
     }
     random.shuffle = shuffle;
     /**
@@ -152,7 +152,7 @@ function random() {
      * @returns {T[]}
      */
     function shuffleCopy(source) {
-        return shuffleCopy_1.default(source);
+        return (0, shuffleCopy_1.default)(source);
     }
     random.shuffleCopy = shuffleCopy;
 })(random || (random = {}));
