@@ -3,13 +3,7 @@
  * Licensing: MIT
  */
 
-interface ArrayLikeWritable<T>
-{
-	length: number;
-
-	[n: number]: T;
-}
-
+import {ArrayLikeWritable} from '@tsdotnet/common-interfaces';
 
 /**
  * Randomize array element order in-place.

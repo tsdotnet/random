@@ -7,6 +7,7 @@ import arrayInit from '@tsdotnet/array-init';
 import int from '@tsdotnet/integer';
 import arrayShuffle from './shuffle';
 import arrayShuffleCopy from './shuffleCopy';
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 function random() {
     return Math.random();
 }

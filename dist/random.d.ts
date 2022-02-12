@@ -2,10 +2,7 @@
  * @author electricessence / https://github.com/electricessence/
  * Licensing: MIT
  */
-interface ArrayLikeWritable<T> {
-    length: number;
-    [n: number]: T;
-}
+import { ArrayLikeWritable } from '@tsdotnet/common-interfaces';
 declare function random(): number;
 /**
  * This module only acts as a utility API for getting random numbers from Math.random().

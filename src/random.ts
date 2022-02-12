@@ -3,6 +3,7 @@
  * Licensing: MIT
  */
 
+import {ArrayLikeWritable} from '@tsdotnet/common-interfaces';
 import arrayCopy from '@tsdotnet/array-copy';
 import arrayInit from '@tsdotnet/array-init';
 import int from '@tsdotnet/integer';
@@ -11,12 +12,6 @@ import arrayShuffleCopy from './shuffleCopy';
 
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 
-interface ArrayLikeWritable<T>
-{
-	length: number;
-
-	[n: number]: T;
-}
 
 function random (): number
 {

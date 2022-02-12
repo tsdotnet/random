@@ -2,10 +2,7 @@
  * @author electricessence / https://github.com/electricessence/
  * Licensing: MIT
  */
-interface ArrayLikeWritable<T> {
-    length: number;
-    [n: number]: T;
-}
+import { ArrayLikeWritable } from '@tsdotnet/common-interfaces';
 /**
  * Randomize array element order in-place.
  * Using Durstenfeld shuffle algorithm.
@@ -13,4 +10,3 @@ interface ArrayLikeWritable<T> {
  * @returns The shuffled target array.
  */
 export default function shuffle<T extends ArrayLikeWritable<any>>(target: T): T;
-export {};
