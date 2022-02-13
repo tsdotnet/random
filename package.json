@@ -1,6 +1,6 @@
 {
   "name": "@tsdotnet/random",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "A utility for simplifying generating random numbers and shuffling arrays. ",
   "author": "electricessence",
   "license": "MIT",
