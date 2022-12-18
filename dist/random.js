@@ -5,11 +5,11 @@
  */
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
-const array_copy_1 = (0, tslib_1.__importDefault)(require("@tsdotnet/array-copy"));
-const array_init_1 = (0, tslib_1.__importDefault)(require("@tsdotnet/array-init"));
-const integer_1 = (0, tslib_1.__importDefault)(require("@tsdotnet/integer"));
-const shuffle_1 = (0, tslib_1.__importDefault)(require("./shuffle"));
-const shuffleCopy_1 = (0, tslib_1.__importDefault)(require("./shuffleCopy"));
+const array_copy_1 = tslib_1.__importDefault(require("@tsdotnet/array-copy"));
+const array_init_1 = tslib_1.__importDefault(require("@tsdotnet/array-init"));
+const integer_1 = tslib_1.__importDefault(require("@tsdotnet/integer"));
+const shuffle_1 = tslib_1.__importDefault(require("./shuffle"));
+const shuffleCopy_1 = tslib_1.__importDefault(require("./shuffleCopy"));
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 function random() {
     return Math.random();
