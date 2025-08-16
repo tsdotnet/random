@@ -1,17 +1,14 @@
-"use strict";
 /*!
  * @author electricessence / https://github.com/electricessence/
  * Licensing: MIT
  */
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.default = shuffle;
 /**
  * Randomize array element order in-place.
  * Using Durstenfeld shuffle algorithm.
  * @param target The target array to shuffle.
  * @returns The shuffled target array.
  */
-function shuffle(target) {
+export default function shuffle(target) {
     let i = target.length;
     while (--i) {
         const j = Math.floor(Math.random() * (i + 1));

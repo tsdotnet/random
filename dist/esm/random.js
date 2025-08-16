@@ -1,15 +1,12 @@
-"use strict";
 /*!
  * @author electricessence / https://github.com/electricessence/
  * Licensing: MIT
  */
-Object.defineProperty(exports, "__esModule", { value: true });
-const tslib_1 = require("tslib");
-const array_copy_1 = tslib_1.__importDefault(require("@tsdotnet/array-copy"));
-const array_init_1 = tslib_1.__importDefault(require("@tsdotnet/array-init"));
-const integer_1 = tslib_1.__importDefault(require("@tsdotnet/integer"));
-const shuffle_1 = tslib_1.__importDefault(require("./shuffle"));
-const shuffleCopy_1 = tslib_1.__importDefault(require("./shuffleCopy"));
+import arrayCopy from '@tsdotnet/array-copy';
+import arrayInit from '@tsdotnet/array-init';
+import int from '@tsdotnet/integer';
+import arrayShuffle from './shuffle';
+import arrayShuffleCopy from './shuffleCopy';
 function random() {
     return Math.random();
 }
@@ -63,7 +60,7 @@ function random() {
      * @returns {number}
      */
     function next(boundary, inclusive) {
-        integer_1.default.assert(boundary, 'boundary');
+        int.assert(boundary, 'boundary');
         return nr(boundary, inclusive);
     }
     random.next = next;
@@ -80,8 +77,8 @@ function random() {
         }
         next.float = float;
         function inRange(min, max, inclusive) {
-            integer_1.default.assert(min, 'min');
-            integer_1.default.assert(max, 'max');
+            int.assert(min, 'min');
+            int.assert(max, 'max');
             let range = max - min;
             if (range === 0)
                 return min;
@@ -99,8 +96,8 @@ function random() {
      * @returns {number[]}
      */
     function integers(count, boundary, inclusive) {
-        integer_1.default.assert(count);
-        const s = (0, array_init_1.default)(count);
+        int.assert(count);
+        const s = arrayInit(count);
         for (let i = 0; i < count; i++) {
             s[i] = nr(boundary, inclusive);
         }
@@ -115,14 +112,14 @@ function random() {
      */
     function select(source, maxCount) {
         if (maxCount !== Infinity)
-            integer_1.default.assertZeroOrGreater(maxCount);
+            int.assertZeroOrGreater(maxCount);
         switch (maxCount) {
             case 0:
                 return [];
             case 1:
                 return [select.one(source, true)];
         }
-        const result = (0, shuffle_1.default)((0, array_copy_1.default)(source));
+        const result = arrayShuffle(arrayCopy(source));
         if (maxCount < result.length)
             result.length = maxCount;
         return result;
@@ -143,7 +140,7 @@ function random() {
      * @returns {T}
      */
     function shuffle(target) {
-        return (0, shuffle_1.default)(target);
+        return arrayShuffle(target);
     }
     random.shuffle = shuffle;
     /**
@@ -152,11 +149,11 @@ function random() {
      * @returns {T[]}
      */
     function shuffleCopy(source) {
-        return (0, shuffleCopy_1.default)(source);
+        return arrayShuffleCopy(source);
     }
     random.shuffleCopy = shuffleCopy;
 })(random || (random = {}));
-exports.default = random;
+export default random;
 function r(maxExclusive = 1) {
     return Math.floor(Math.random() * maxExclusive);
 }

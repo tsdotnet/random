@@ -28,11 +28,11 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0
       '@tsdotnet/array-init':
-        specifier: ^1.2.0
-        version: 1.2.0
+        specifier: ^1.2.1
+        version: 1.2.1
       '@tsdotnet/integer':
-        specifier: ^1.2.0
-        version: 1.2.0
+        specifier: ^1.2.1
+        version: 1.2.1
       tslib:
         specifier: ^2.8.1
         version: 2.8.1
@@ -62,7 +62,7 @@ importers:
         specifier: ^9.33.0
         version: 9.33.0
       eslint-plugin-n:
-        specifier: ^17.15.0
+        specifier: ^17.21.3
         version: 17.21.3(eslint@9.33.0)(typescript@5.9.2)
       mocha:
         specifier: ^11.7.1
@@ -352,17 +352,17 @@ packages:
   '@tsdotnet/array-copy@1.1.0':
     resolution: {integrity: sha512-mcaUoLdB2n1S816NUOhxPhRD/PH5EEYg/IE6TN5MG1KUNpx9P6oAMXVH9vGf1veh/7G4bOiixaioi3lSBKTiqQ==}
 
-  '@tsdotnet/array-init@1.2.0':
-    resolution: {integrity: sha512-AaX+DLaV/hpE4fR9QkDaNAGbLKEosHnajS51jVkDxUu/5Kj/Uro5eMv6I49PgYRcjpCNXivEUQYnQ7leSAPPgg==}
+  '@tsdotnet/array-init@1.2.1':
+    resolution: {integrity: sha512-qZ77AJ2tc0BHev0gqgJR4emKPILpfzs6wieI5zEpnutF4haMgirZdWAmI3lstrqPAHjE6rySlxmRiJ8YOdcl9A==}
 
   '@tsdotnet/common-interfaces@1.0.4':
     resolution: {integrity: sha512-/LngZd3+wOlPw5VdQMxB+QNLuVH+9QsqBD+RZyKEKDhENP36vPhsTGbvA7bFNITnN1AqPy/Ih+x8A+jCYUhUgA==}
 
-  '@tsdotnet/exceptions@1.2.1':
-    resolution: {integrity: sha512-QKSPMpPCV1us/5qDr2IMtISJE2I72Tp78H3yL8gdvc3HY4Ipk5RX/S1d6f8BCRBSpHGwhZ28Z5Oh8+5kIjkSDQ==}
+  '@tsdotnet/exceptions@1.2.2':
+    resolution: {integrity: sha512-1CO5lrsZ21gcuBrX3rnP2K1QKOJu5R7NKHx8Er1cU3p+C6lsdNQ4bispYRpFjLZ6Hkzpp6CMTZwVHQTdE4psCQ==}
 
-  '@tsdotnet/integer@1.2.0':
-    resolution: {integrity: sha512-u5+UYWiRNbiBimqW1rSJqWt/qHiiW7wvnm1fmAjVjG9yTW1wvB8JQ9FcQiEC60SShmg6tulsEp9IHZWVC3B0nA==}
+  '@tsdotnet/integer@1.2.1':
+    resolution: {integrity: sha512-d3jwVxEji7DMC3kb51wEQKxCSq9ODrS8dpPO+mzN7nI/ZakHVo6X7UyYBO/pHTg/6G0W3qnbKLpyhDvI/5/pTA==}
 
   '@types/chai@5.2.2':
     resolution: {integrity: sha512-8kB30R7Hwqf40JPiKhVzodJs2Qc1ZJ5zuT3uzw5Hq/dhNCl3G3l83jfpdI1e20BP348+fV7VIL/+FxaXkqBmWg==}
@@ -1405,21 +1405,21 @@ snapshots:
 
   '@tsdotnet/array-copy@1.1.0':
     dependencies:
-      '@tsdotnet/array-init': 1.2.0
-      '@tsdotnet/exceptions': 1.2.1
+      '@tsdotnet/array-init': 1.2.1
+      '@tsdotnet/exceptions': 1.2.2
       tslib: 2.8.1
 
-  '@tsdotnet/array-init@1.2.0': {}
+  '@tsdotnet/array-init@1.2.1': {}
 
   '@tsdotnet/common-interfaces@1.0.4': {}
 
-  '@tsdotnet/exceptions@1.2.1':
+  '@tsdotnet/exceptions@1.2.2':
     dependencies:
       tslib: 2.8.1
 
-  '@tsdotnet/integer@1.2.0':
+  '@tsdotnet/integer@1.2.1':
     dependencies:
-      '@tsdotnet/exceptions': 1.2.1
+      '@tsdotnet/exceptions': 1.2.2
       tslib: 2.8.1
 
   '@types/chai@5.2.2':
