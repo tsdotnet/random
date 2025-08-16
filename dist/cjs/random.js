@@ -10,7 +10,6 @@ const array_init_1 = tslib_1.__importDefault(require("@tsdotnet/array-init"));
 const integer_1 = tslib_1.__importDefault(require("@tsdotnet/integer"));
 const shuffle_1 = tslib_1.__importDefault(require("./shuffle"));
 const shuffleCopy_1 = tslib_1.__importDefault(require("./shuffleCopy"));
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 function random() {
     return Math.random();
 }

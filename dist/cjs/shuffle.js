@@ -4,6 +4,7 @@
  * Licensing: MIT
  */
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = shuffle;
 /**
  * Randomize array element order in-place.
  * Using Durstenfeld shuffle algorithm.
@@ -20,5 +21,4 @@ function shuffle(target) {
     }
     return target;
 }
-exports.default = shuffle;
 //# sourceMappingURL=shuffle.js.map
