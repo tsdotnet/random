@@ -7,6 +7,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = shuffle;
 function shuffle(target) {
     let i = target.length;
+    if (i == 0)
+        return target;
     while (--i) {
         const j = Math.floor(Math.random() * (i + 1));
         const temp = target[i];

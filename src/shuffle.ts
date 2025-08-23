@@ -13,6 +13,7 @@ import {ArrayLikeWritable} from '@tsdotnet/common-interfaces';
  */
 export default function shuffle<T extends ArrayLikeWritable<any>> (target: T): T {
 	let i = target.length;
+	if(i==0) return target;
 	while(--i)
 	{
 		const j = Math.floor(Math.random()*(i + 1));
