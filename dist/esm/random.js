@@ -96,7 +96,7 @@ function random() {
     }
     random.shuffleCopy = shuffleCopy$1;
 })(random || (random = {}));
-var random$1 = random;
+var random_default = random;
 function r(maxExclusive = 1) {
     return Math.floor(Math.random() * maxExclusive);
 }
@@ -109,5 +109,5 @@ function nr(boundary, inclusive) {
     return r(boundary);
 }
 
-export { random$1 as default };
+export { random_default as default };
 //# sourceMappingURL=random.js.map

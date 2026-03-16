@@ -7,8 +7,8 @@ import {ArrayLikeWritable} from '@tsdotnet/common-interfaces';
 import arrayCopy from '@tsdotnet/array-copy';
 import arrayInit from '@tsdotnet/array-init';
 import int from '@tsdotnet/integer';
-import arrayShuffle from './shuffle';
-import arrayShuffleCopy from './shuffleCopy';
+import arrayShuffle from './shuffle.js';
+import arrayShuffleCopy from './shuffleCopy.js';
 
 
 function random (): number

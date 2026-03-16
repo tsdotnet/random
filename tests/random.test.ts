@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import random from '../src/random';
+import random from '../src/random.js';
 
 describe('random', () => {
 	it('should return number between 0 and 1', () => {

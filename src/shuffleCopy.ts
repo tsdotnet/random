@@ -3,7 +3,7 @@
  * Licensing: MIT
  */
 
-import shuffle from './shuffle';
+import shuffle from './shuffle.js';
 import arrayCopy from '@tsdotnet/array-copy';
 
 /**
