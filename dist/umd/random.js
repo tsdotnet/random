@@ -4,6 +4,12 @@
     (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory((global.tsdotnet = global.tsdotnet || {}, global.tsdotnet.random = global.tsdotnet.random || {}), global.tsdotnet.arrayCopy, global.tsdotnet.arrayInit, global.tsdotnet.integer));
 })(this, (function (exports, arrayCopy, arrayInit, int) { 'use strict';
 
+    function _interopDefault (e) { return e && e.__esModule ? e : { default: e }; }
+
+    var arrayCopy__default = /*#__PURE__*/_interopDefault(arrayCopy);
+    var arrayInit__default = /*#__PURE__*/_interopDefault(arrayInit);
+    var int__default = /*#__PURE__*/_interopDefault(int);
+
     /*!
      * @author electricessence / https://github.com/electricessence/
      * Licensing: MIT
@@ -26,7 +32,7 @@
      * Licensing: MIT
      */
     function shuffleCopy(source) {
-        return shuffle(arrayCopy(source));
+        return shuffle(arrayCopy__default.default(source));
     }
 
     /*!
@@ -52,7 +58,7 @@
             generate.integers = integers;
         })(generate = random.generate || (random.generate = {}));
         function next(boundary, inclusive) {
-            int.assert(boundary, 'boundary');
+            int__default.default.assert(boundary, 'boundary');
             return nr(boundary, inclusive);
         }
         random.next = next;
@@ -68,8 +74,8 @@
             }
             next.float = float;
             function inRange(min, max, inclusive) {
-                int.assert(min, 'min');
-                int.assert(max, 'max');
+                int__default.default.assert(min, 'min');
+                int__default.default.assert(max, 'max');
                 let range = max - min;
                 if (range === 0)
                     return min;
@@ -80,8 +86,8 @@
             next.inRange = inRange;
         })(next = random.next || (random.next = {}));
         function integers(count, boundary, inclusive) {
-            int.assert(count);
-            const s = arrayInit(count);
+            int__default.default.assert(count);
+            const s = arrayInit__default.default(count);
             for (let i = 0; i < count; i++) {
                 s[i] = nr(boundary, inclusive);
             }
@@ -90,14 +96,14 @@
         random.integers = integers;
         function select(source, maxCount) {
             if (maxCount !== Infinity)
-                int.assertZeroOrGreater(maxCount);
+                int__default.default.assertZeroOrGreater(maxCount);
             switch (maxCount) {
                 case 0:
                     return [];
                 case 1:
                     return [select.one(source, true)];
             }
-            const result = shuffle(arrayCopy(source));
+            const result = shuffle(arrayCopy__default.default(source));
             if (maxCount < result.length)
                 result.length = maxCount;
             return result;
