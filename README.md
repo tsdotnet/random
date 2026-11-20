@@ -1,4 +1,4 @@
-![@tsdotnet/random: Pick, mix and roll. Random numbers, picks and shuffles.](https://cdn.jsdelivr.net/gh/tsdotnet/random@master/assets/banner.svg)
+<a href="https://tsdotnet.github.io/random/"><img src="https://cdn.jsdelivr.net/gh/tsdotnet/random@master/assets/banner.svg" alt="@tsdotnet/random: Pick, mix and roll. Random numbers, picks and shuffles."></a>
 
 [![npm version](https://img.shields.io/npm/v/@tsdotnet/random.svg?style=flat-square)](https://www.npmjs.com/package/@tsdotnet/random)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/tsdotnet/random/blob/master/LICENSE)
